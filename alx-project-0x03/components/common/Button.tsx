@@ -34,21 +34,9 @@ type ButtonProps = {
   label: string;
   onClick: () => void;
 };
-
-const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
-  return (
-    <button onClick={onClick}>
-      {label}
-    </button>
-  );
-};
-
-export default Button;
-
 // components/common/Button.tsx
-
 import React from 'react';
-import { ButtonProps } from '../../interface';  // Ensure this line is added
+import { ButtonProps } from '../../interface';  // <-- Ensure correct relative path
 
 const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
   return (
@@ -59,5 +47,3 @@ const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
 };
 
 export default Button;
-
-
