@@ -72,4 +72,17 @@ export default function Home() {
     </div>
   );
 }
+// pages/index.tsx
+import React from 'react';
+import { HomePageProps } from '../interface';
+
+const HomePage: React.FC<HomePageProps> = ({ title }) => {
+  return (
+    <div>
+      <h1>{title}</h1>
+    </div>
+  );
+};
+
+export default HomePage;
 
