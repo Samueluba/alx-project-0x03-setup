@@ -13,3 +13,8 @@ export interface PageRouteProps {
   pageRoute: string;
 }
 
+// interface/index.ts
+
+export interface HomePageProps {
+  title: string;
+}
