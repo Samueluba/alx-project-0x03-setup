@@ -45,3 +45,19 @@ const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
 
 export default Button;
 
+// components/common/Button.tsx
+
+import React from 'react';
+import { ButtonProps } from '../../interface';  // Ensure this line is added
+
+const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
+  return (
+    <button onClick={onClick}>
+      {label}
+    </button>
+  );
+};
+
+export default Button;
+
+
