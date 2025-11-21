@@ -18,3 +18,9 @@ export interface PageRouteProps {
 export interface HomePageProps {
   title: string;
 }
+// interface/index.ts
+
+export interface ButtonProps {
+  label: string;
+  onClick: () => void;
+}
